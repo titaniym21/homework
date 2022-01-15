@@ -1,0 +1,44 @@
+.container {
+    background-color: #f5f5f5;
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+}
+.content {
+    padding: 20px 40px;
+}
+h1 {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+h2 {
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+p {
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.formula {
+    text-align: center;
+}
+.formulaText {
+    background-color: #feaaab;
+    display: inline-block;
+    padding: 3px 10px;
+}
+.formulaText {
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.redText {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: 700;
+    color: #86000C;
+}
