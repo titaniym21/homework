@@ -1,0 +1,48 @@
+.content {
+    background-color: #f5f5f5;
+    width: 1024px;
+    margin: 40px auto;
+    padding: 40px;
+    font-size: 24px;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.title , .what-HTML, .markup{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: darkgrey;
+    padding-bottom: 10px;
+
+}
+
+.html{
+    border-bottom: dotted;
+}
+
+.main-tags{
+    background-color: darkgrey;
+    color: darkred;
+}
+
+.code-markup{
+    padding: 20px;
+    background-color: darkgrey;
+    color: darkred;
+}
+
+.text-code-black{
+    color: black;
+}
+
+blockquote {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+a{
+   text-decoration: none;
+    color: cadetblue;
+}

@@ -1,0 +1,26 @@
+.content {
+    background-color: #f5f5f5;
+    width: 1024px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+p{
+    font-size: 24px;
+}
+
+li{
+    background-color: darkgrey;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.blackText{
+    color: black;
+    font-size: 50px;
+}
+
+.redText{
+    color: darkred;
+    font-size: 50px;
+}
