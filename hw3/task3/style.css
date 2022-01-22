@@ -18,6 +18,10 @@ h1, h2{
 
 }
 
+.italic{
+    font-style: italic;
+}
+
 .html{
     border-bottom: dotted;
 }
