@@ -1,0 +1,33 @@
+.content {
+    background-color: gainsboro;
+    width: 1024px;
+    margin: 40px auto;
+    padding: 20px;
+    font-size: 24px;
+}
+
+ol {
+    background-color: lightpink;
+    list-style-type: none;
+    counter-reset: number;
+    padding: 20px;
+    margin: 0;
+}
+
+li {
+    background-color: #f66c7d;
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px;
+}
+
+li::before {
+    counter-increment: number;
+    content: counter(number) ".";
+    padding: 10px;
+}
+
+span {
+    background-color: #bb2f37;
+    padding: 10px 15px;
+}

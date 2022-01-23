@@ -1,0 +1,53 @@
+.content {
+    background-color: #F5F5F5;
+    width: 1024px;
+    margin: 40px auto;
+    padding: 10px;
+    font-size: 24px;
+}
+
+h1 {
+    padding-left: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+li::before {
+    content: url("icons/unchecked_16.png");
+    padding: 10px 20px;
+}
+
+li::after{
+    content: '\D7';
+    color: #890026;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+li:nth-child(2)::before, li:nth-child(5)::before, li:nth-child(11)::before {
+    content: url("icons/checked_16.png");
+    padding: 10px 20px;
+}
+
+li:nth-child(odd) {
+    background-color: #629AB9;
+    padding: 10px;
+}
+
+li:nth-child(even) {
+    background-color: #ACD7E4;
+    padding: 10px;
+}
+
+li:nth-child(2), li:nth-child(5), li:nth-child(11) {
+    background-color: #E1E1E1;
+
+}
+
+.text-list-line {
+    text-decoration: line-through;
+}
+

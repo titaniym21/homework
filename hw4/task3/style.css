@@ -1,0 +1,28 @@
+.content {
+    background-color: #F5F5F5;
+    width: 1200px;
+    margin: 40px auto;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.tag {
+    font-style: italic;
+}
+
+ol {
+    margin-left: 50px;
+}
+
+dd {
+    color: grey;
+    margin-left: 0;
+}
+
+.blue-text {
+    color: #6c22f8;
+}
+
+.text-bold {
+    font-weight: bolder;
+}
