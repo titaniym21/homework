@@ -2,7 +2,7 @@
     background-color: #F5F5F5;
     width: 1200px;
     margin: 40px auto;
-    padding: 10px;
+    padding: 20px;
     font-size: 24px;
 }
 
@@ -10,8 +10,13 @@
     font-style: italic;
 }
 
+
 ol {
     margin-left: 50px;
+}
+
+dl{
+    margin: 0;
 }
 
 dd {
