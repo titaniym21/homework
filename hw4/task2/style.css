@@ -2,16 +2,13 @@
     background-color: #F5F5F5;
     width: 1024px;
     margin: 40px auto;
-    padding: 10px;
+    padding: 10px 40px;
     font-size: 24px;
-}
-
-h1 {
-    padding-left: 40px;
 }
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 
@@ -20,7 +17,7 @@ li::before {
     padding: 10px 20px;
 }
 
-li::after{
+li::after {
     content: '\D7';
     color: #890026;
     font-weight: bold;
