@@ -1,0 +1,91 @@
+.content {
+    background-color: #F5F5F5;
+    max-width: 1100px;
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #2E516C;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #D2D8DD;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #D2D8DD;
+    font-size: 24px;
+}
+
+.copyright p {
+    color: #D2D8DD;
+    font-size: 16px;
+}
+
+.section3 {
+    display: flex;
+    align-items: center;
+}
+
+.section3 ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.section3 a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    margin: 10px;
+    transition: all .5s ease;
+}
+
+.facebook {
+    background: url("icons/fb_gray.png") no-repeat;
+}
+
+.instagram {
+    background: url("icons/insta_gray.png") no-repeat;
+}
+
+.youtube {
+    background: url("icons/youtube_gray.png") no-repeat;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.section1 a:hover, .section2 a:hover {
+    text-decoration: underline;
+}
+
+.section3 a:hover{
+    background-size: 40px;
+}
+
+.facebook:hover {
+    background: url("icons/fb.png");
+}
+
+.instagram:hover {
+    background: url("icons/insta.png");
+}
+
+.youtube:hover {
+    background: url("icons/youtube.png");
+}
