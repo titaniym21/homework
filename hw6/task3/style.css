@@ -1,0 +1,68 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.main_block {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 80vh;
+    height: 20vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.text_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40vh;
+    height: 20vh;
+    background-color: #c1c1c1;
+    z-index: 1;
+}
+
+.img_block {
+    width: 40vh;
+    height: 20vh;
+    margin-bottom: -4px; /*картинка с рамкой*/
+}
+
+span {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.main_block:hover .text_block {
+    animation: text .3s linear alternate 1;
+    animation-fill-mode: forwards;
+}
+
+.main_block:hover .img_block {
+    animation: img 1s linear alternate 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes img {
+    100% {
+        transform: scale(1.3);
+        opacity: 0.5;
+    }
+}
+
+@keyframes text {
+    100% {
+        background-color: grey;
+    }
+}
+
