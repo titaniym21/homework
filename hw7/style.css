@@ -1,0 +1,252 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/*-----------------------------task1---------------------------------*/
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 95%;
+
+}
+
+.table {
+    height: 70vh;
+    overflow: scroll;
+}
+
+.zero {
+    position: absolute;
+    width: calc(2000px / 6);
+    height: calc(100vh / 9);
+    background-color: #629AB9;
+    z-index: 2;
+}
+
+table {
+    width: 2000px;
+    height: 100vh;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+    font-size: 26px;
+
+}
+
+.fixed, .fixed1 {
+    width: calc(2000px / 6);
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #629AB9;
+    z-index: 1;
+    font-weight: bolder;
+}
+
+th, td {
+    padding: 0;
+}
+
+.double {
+    background-color: #9e9d9d;
+}
+
+/*-------------------------------task2---------------------------------*/
+
+.left_menu {
+    height: 70vh;
+    overflow: scroll;
+
+}
+
+.aside_left {
+    position: absolute;
+}
+
+.content {
+    position:relative ;
+    float: right;
+    font-size: 24px;
+    width: 90%;
+    z-index: -1;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.list_aside_left {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    background-color: #9e9d9d;
+    height: 68vh;
+    transition: all 1s linear;
+}
+
+.item_aside_left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu_aside_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+
+.img_aside_left {
+    width: 80px;
+    height: 80px;
+}
+
+
+.aside_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100px;
+    padding: 0 10px;
+    color: white;
+    z-index: -1;
+}
+
+.menu_aside_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: white;
+}
+
+.item_aside_left:hover{
+    background-color: #7f7f7f;
+}
+
+.aside_left:hover .list_aside_left{
+    width: 200px;
+}
+
+.aside_left:hover .aside_text{
+    position: sticky;
+    z-index: 1;
+    transition-delay: 1s;
+}
+
+/*-------------------------------task3---------------------------------*/
+
+.cards_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #808080;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.35);
+    background-color: white;
+}
+
+.card_header {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card_prise {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.per_month {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #9e9d9d;
+}
+
+.conditions ul {
+    margin-top: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.conditions li {
+    margin-top: 10px;
+    padding-top: -20px;
+    font-weight: bolder;
+}
+
+.card_buy {
+    font-size: 22px;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+
+.first .card_header {
+    border-bottom: 3px solid #ef1454;
+    width: 100%;
+}
+
+.two .card_header {
+    border-bottom: 3px solid #ef7314;
+    width: 100%;
+}
+
+.three .card_header {
+    border-bottom: 3px solid #3e609a;
+    width: 100%;
+}
+
+.four .card_header {
+    border-bottom: 3px solid #3f9343;
+    width: 100%;
+}
+
+.first .card_buy {
+    background-color: #ef1454;
+}
+
+.two .card_buy {
+    background-color: #ef7314;
+}
+
+.three .card_buy {
+    background-color: #3e609a;
+}
+
+.four .card_buy {
+    background-color: #3f9343;
+}
+
+.card:hover {
+    transition: all 1s linear;
+    z-index: 1;
+    transform: scale(1.2);
+}
