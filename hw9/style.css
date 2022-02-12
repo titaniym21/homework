@@ -67,7 +67,7 @@ th, td {
 }
 
 .content {
-    position:relative ;
+    position: relative;
     float: right;
     font-size: 24px;
     width: 90%;
@@ -129,15 +129,15 @@ th, td {
     color: white;
 }
 
-.item_aside_left:hover{
+.item_aside_left:hover {
     background-color: #7f7f7f;
 }
 
-.aside_left:hover .list_aside_left{
+.aside_left:hover .list_aside_left {
     width: 200px;
 }
 
-.aside_left:hover .aside_text{
+.aside_left:hover .aside_text {
     position: sticky;
     z-index: 1;
     transition-delay: 1s;
