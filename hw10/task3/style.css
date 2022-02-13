@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.content_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: grey;
+    overflow: hidden;
+}
+
+.text_block {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: #c1c1c1;
+    z-index: 1;
+}
+
+.img_block {
+    background-image: url("img/leaves.jpg");
+    background-repeat: round;
+}
+
+span {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.content_block:hover .text_block {
+    background-color: grey;
+    transition: all .3s linear;
+}
+
+.content_block:hover .img_block {
+    transform: scale(1.3);
+    opacity: 0.5;
+    transition: all 1s linear;
+}
+
+

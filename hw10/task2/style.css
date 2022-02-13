@@ -1,0 +1,58 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.sash {
+    position: absolute;
+    top: 40vh;
+    left: calc(50% - 30vh);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    perspective: 50vh;
+}
+
+.sash:hover .right {
+    transform: rotateY(60deg);
+    transform-origin: left center;
+    transition: all 2s linear;
+}
+
+.sash:hover .left {
+    transform: rotateY(-60deg);
+    transform-origin: right center;
+    transition: all 2s linear;
+}
+
+
+.block {
+    border: 4px solid #6D1A39;
+    background-color: #a32958;
+    width: 30vh;
+    height: 20vh;
+    z-index: 1;
+}
+
+
+.text {
+    position: absolute;
+    left: 15vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: calc(30vh + 8px);
+    height: calc(20vh + 8px);
+}
+
+span {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+
