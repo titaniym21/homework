@@ -1,0 +1,250 @@
+:root {
+    --grey-100: #F6F6F6;
+    --grey-400: #828282;
+    --black: #070707;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h4, p {
+    margin: 0;
+}
+
+
+.header {
+    position: sticky;
+    top: 0;
+
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 42px;
+    border-bottom: 1px solid var(--grey-400);
+    opacity: 0;
+}
+
+.header_nav:hover {
+    opacity: 1;
+    transition: all .4s linear;
+}
+
+
+.header_nav_item {
+    padding-top: 32px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--grey-400);
+    transition: all .4s;
+}
+
+.header_nav_item .is-active, .header_nav_item:hover {
+    color: var(--black);
+}
+
+.hero_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.hero_title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 59px;
+    color: var(--black);
+    width: 120px;
+}
+
+.hero_des {
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    width: 160px;
+}
+
+.hero_len_block {
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+}
+
+.hero_len_block_item {
+    font-weight: bolder;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--grey-400);
+}
+
+.hero_len_block_item:nth-child(2) {
+    color: var(--black);
+}
+
+.hero_img {
+    margin-top: 30px;
+    margin-bottom: 105px;
+}
+
+.about {
+    margin-top: 105px;
+    background: var(--grey-100);
+}
+
+.about_block {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.about_title {
+    padding-top: 120px;
+    padding-bottom: 18px;
+    font-size: 34px;
+    line-height: 42px;
+    color: var(--black);
+}
+
+.about_description {
+    padding-bottom: 50px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: var(--black);
+}
+
+.skills_block {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.skills_block_title {
+    margin-top: 91px;
+    font-size: 34px;
+    line-height: 42px;
+    color: var(--black);
+}
+
+.skills_block_description {
+    margin-top: 71px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+}
+
+.skills_block_program_list {
+    margin-top: 84px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills_block_program_name {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey-400);
+}
+
+.skills_block_program_rating {
+    margin-top: 41px;
+}
+
+.portfolio {
+    margin-top: 110px;
+    background: var(--grey-100);
+}
+
+.portfolio_block {
+    text-align: center;
+    padding-top: 112px;
+}
+
+.portfolio_block_title {
+    margin-bottom: 47px;
+}
+
+.portfolio_block_item {
+    padding-bottom: 100px;
+}
+
+.portfolio_block_item img {
+    margin-bottom: 45px;
+}
+
+.portfolio_block_item a {
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: var(--black);
+}
+
+.contact_block {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    text-align: center;
+}
+
+.contact_block_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_block_article {
+    margin-top: 115px;
+}
+
+.contact_block_title {
+    font-size: 34px;
+    line-height: 42px;
+    color: var(--black);
+}
+
+.contact_block_description {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.contact_block_message {
+    background: var(--black);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--grey-100);
+}
+
+.contact_block_list {
+    margin-top: 85px;
+}
+
+.contact_block_like {
+    margin-top: 45px;
+    margin-bottom: 125px;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey-400);
+}
