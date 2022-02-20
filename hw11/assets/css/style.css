@@ -45,7 +45,6 @@ h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100vh;
 }
 
 .hero_img {
@@ -87,6 +86,7 @@ h2, h3 {
     line-height: 27px;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 320px;
 }
 
 
@@ -253,6 +253,8 @@ h2, h3 {
 
 .portfolio {
     margin-top: 164px;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio_block {
