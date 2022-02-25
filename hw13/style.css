@@ -76,7 +76,7 @@ p {
 
     .adaptive_box {
         background-color: rgb(28, 94, 85);
-        
+        padding: 40px;
     }
 
 
@@ -121,6 +121,7 @@ p {
 }
 
 .cat_img_text {
+    font-size: 20px;
     color: #F5F4F3;
     padding: 15px;
     margin-top: -4px;
@@ -130,10 +131,12 @@ p {
 
 .cat_header {
     grid-area: H;
+    font-size: 20px;
 }
 
 .cat_footer {
     grid-area: F;
+    font-size: 20px;
 }
 
 
@@ -166,6 +169,7 @@ p {
     .cat_box {
         grid-template-areas: "H H" "I I" "F F";
         gap: 5%;
+        padding: 40px;
     }
 
 }
