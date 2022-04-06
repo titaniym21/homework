@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\stepik_JS\\script1.js"
+            "program": "${workspaceFolder}"
         }
     ]
 }

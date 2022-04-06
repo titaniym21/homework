@@ -1,0 +1,14 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.title, .title_task{
+    text-align: center;
+}
