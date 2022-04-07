@@ -22,17 +22,21 @@ body {
     text-align: center;
 }
 
-.task1{
+.task_style{
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
 }
 
-.outnum-task1{
+.res-style{
     border: 1px solid #000;
     border-radius: 2px;
     padding: 2px 1px;
     text-align: center;
     font-size: 20px;
+}
+
+.task3, .task4{
+    grid-template-columns: repeat(3, 1fr);
 }
