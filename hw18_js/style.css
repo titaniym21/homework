@@ -12,3 +12,27 @@ body {
 .title, .title_task{
     text-align: center;
 }
+
+.task_item {
+    margin: 20px 0;
+}
+
+.input-style{
+    font-size: 20px;
+    text-align: center;
+}
+
+.task1{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.outnum-task1{
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 2px 1px;
+    text-align: center;
+    font-size: 20px;
+}
