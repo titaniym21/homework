@@ -37,6 +37,8 @@ body {
     font-size: 20px;
 }
 
-.task3, .task4{
+.task3, .task4, .task5-1{
     grid-template-columns: repeat(3, 1fr);
+    height: 23px;
 }
+
