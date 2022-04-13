@@ -117,13 +117,21 @@ function task_6() {
 document.querySelector(".btn-task7").addEventListener("click", function () {
   var a = Number(document.querySelector(".num1-task7").value);
   var b = Number(document.querySelector(".num2-task7").value);
+  var tmp1 = [];
+  var tmp2 = [];
   if (String(a).length > b) {
-    
-  } 
-  else if(String(a).length == b) {
+    for (var i = 0; i < String(a).length; i++) {
+      if (i < b) {
+        tmp1.push(String(a).charAt(i));
+      } else {
+        tmp2.push(String(a).charAt(i));
+      }
+    }
+    document.querySelector(".outnum-task7").innerHTML =
+      tmp2.join("") + tmp1.join("");
+  } else if (String(a).length == b) {
     document.querySelector(".outnum-task7").innerHTML = a;
-  }
-  else {
+  } else {
     document.querySelector(".outnum-task7").innerHTML =
       "Нет такого количества знаков в числе!";
   }
