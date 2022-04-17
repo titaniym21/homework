@@ -157,8 +157,38 @@ document.querySelector(".btn-task9").addEventListener("click", function () {
   for (var i = 2; i < 10; i++) {
     for (var j = 1; j <= 10; j++) {
       document.querySelector(".outnum-task9").innerHTML +=
-        "<div>" + i + "*" + j + "=" + i * j + "</div>";
+        "<div>" + j + "*" + i + "=" + j * i + "</div>";
     }
   }
   document.querySelector(".btn-task9").style.display = "none";
+});
+
+//task10
+document.querySelector(".btn1-task10").addEventListener("click", function () {
+  var x = Number(document.querySelector(".num1-task10").value);
+  document.querySelector(".outnum-task10").innerHTML = x;
+  var start = 0;
+  var end = 100;
+  result(start, end);
+  function result(a, b) {
+    var mid = b - Math.floor((b - a) / 2);
+    if (mid == x) {
+      document.querySelector(".answer-task10").innerHTML = "Вы угадали!";
+    } 
+    else {
+      document.querySelector(".answer-task10").innerHTML = mid;
+      document
+        .querySelector(".btn2-task10")
+        .addEventListener("click", function () {
+          b -= Math.floor((b - a) / 2);
+          return result(a, b);
+        });
+      document
+        .querySelector(".btn3-task10")
+        .addEventListener("click", function () {
+          a += Math.floor((b - a) / 2);
+          return result(a, b);
+        });
+    }
+  }
 });
