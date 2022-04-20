@@ -1,13 +1,13 @@
 //task1
 document.querySelector(".btn-task1").addEventListener("click", function () {
-  var a = Number(document.querySelector(".num1-task1").value);
-  var b = Number(document.querySelector(".num2-task1").value);
+  let a = Number(document.querySelector(".num1-task1").value);
+  let b = Number(document.querySelector(".num2-task1").value);
   if (a > b) {
     let buff = a;
     a = b;
     b = buff;
   }
-  var c = a;
+  let c = a;
   while (a < b) {
     a++;
     c += a;
@@ -17,11 +17,11 @@ document.querySelector(".btn-task1").addEventListener("click", function () {
 
 //task2
 document.querySelector(".btn-task2").addEventListener("click", function () {
-  var a = Number(document.querySelector(".num1-task2").value);
-  var b = Number(document.querySelector(".num2-task2").value);
-  var nod = function (n, m) {
+  let a = Number(document.querySelector(".num1-task2").value);
+  let b = Number(document.querySelector(".num2-task2").value);
+  let nod = function (n, m) {
     if (m !== 0) {
-      var k = n % m;
+      let k = n % m;
       return nod(m, k);
     }
     return n;
@@ -31,8 +31,8 @@ document.querySelector(".btn-task2").addEventListener("click", function () {
 
 //task3
 document.querySelector(".btn-task3").addEventListener("click", function () {
-  var a = Number(document.querySelector(".num1-task3").value);
-  var arr = [],
+  let a = Number(document.querySelector(".num1-task3").value);
+  let arr = [],
     i = 0;
   if (a == 0) {
     document.querySelector(".outnum-task3").innerHTML = "У ноля нет делителей!";
@@ -53,21 +53,21 @@ document.querySelector(".btn-task3").addEventListener("click", function () {
 
 //task4
 document.querySelector(".btn-task4").addEventListener("click", function () {
-  var a = String(document.querySelector(".num1-task4").value);
+  let a = String(document.querySelector(".num1-task4").value);
   document.querySelector(".outnum-task4").innerHTML = a.length;
 });
 
 //task5
-var arr = [];
+let arr = [];
 document.querySelector(".btn1-task5").addEventListener("click", function () {
   arr.push(Number(document.querySelector(".num1-task5").value));
   document.querySelector(".outnum-task5").innerHTML = arr;
 });
-var arrpos = [];
-var arrneg = [];
-var arrzero = [];
+let arrpos = [];
+let arrneg = [];
+let arrzero = [];
 document.querySelector(".btn2-task5").addEventListener("click", function () {
-  for (var item in arr) {
+  for (let item in arr) {
     if (arr[item] > 0) {
       arrpos.push(arr[item]);
     } else if (arr[item] < 0) {
@@ -87,9 +87,9 @@ document.querySelector(".btn2-task5").addEventListener("click", function () {
 //task6
 function task_6() {
   while (true) {
-    var a = prompt("Введите первое число");
-    var b = prompt("Введите второе число");
-    var x = prompt("Введите знак");
+    let a = prompt("Введите первое число");
+    let b = prompt("Введите второе число");
+    let x = prompt("Введите знак");
     switch (x) {
       case "+":
         alert(Number(a) + Number(b));
@@ -106,7 +106,7 @@ function task_6() {
       default:
         alert("Вы ввели неверный знак");
     }
-    var y = prompt("Хотите продолжить? Введите да или нет");
+    let y = prompt("Хотите продолжить? Введите да или нет");
     if (y == "нет") {
       break;
     }
@@ -115,12 +115,12 @@ function task_6() {
 
 //task7
 document.querySelector(".btn-task7").addEventListener("click", function () {
-  var a = Number(document.querySelector(".num1-task7").value);
-  var b = Number(document.querySelector(".num2-task7").value);
-  var tmp1 = [];
-  var tmp2 = [];
+  let a = Number(document.querySelector(".num1-task7").value);
+  let b = Number(document.querySelector(".num2-task7").value);
+  let tmp1 = [];
+  let tmp2 = [];
   if (String(a).length > b) {
-    for (var i = 0; i < String(a).length; i++) {
+    for (let i = 0; i < String(a).length; i++) {
       if (i < b) {
         tmp1.push(String(a).charAt(i));
       } else {
@@ -147,15 +147,15 @@ function task_8() {
     "суббота",
     "воскресенье",
   ];
-  var currDay = 0;
+  let currDay = 0;
   while (confirm(`${days[currDay]}. Хотите увидеть следующий день?`)) {
     currDay = (currDay + 1) % days.length;
   }
 }
 //task9
 document.querySelector(".btn-task9").addEventListener("click", function () {
-  for (var i = 2; i < 10; i++) {
-    for (var j = 1; j <= 10; j++) {
+  for (let i = 2; i < 10; i++) {
+    for (let j = 1; j <= 10; j++) {
       document.querySelector(".outnum-task9").innerHTML +=
         "<div>" + j + "*" + i + "=" + j * i + "</div>";
     }
@@ -165,13 +165,13 @@ document.querySelector(".btn-task9").addEventListener("click", function () {
 
 //task10
 document.querySelector(".btn1-task10").addEventListener("click", function () {
-  var x = Number(document.querySelector(".num1-task10").value);
+  let x = Number(document.querySelector(".num1-task10").value);
   document.querySelector(".outnum-task10").innerHTML = x;
-  var start = 0;
-  var end = 100;
+  let start = 0;
+  let end = 100;
   result(start, end);
   function result(a, b) {
-    var mid = b - Math.floor((b - a) / 2);
+    let mid = b - Math.floor((b - a) / 2);
     if (mid == x) {
       document.querySelector(".answer-task10").innerHTML = "Вы угадали!";
     } 

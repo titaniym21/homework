@@ -1,6 +1,6 @@
 //task_1
 function task_1() {
-  var age = prompt("Введите ваш возраст");
+  let age = prompt("Введите ваш возраст");
   if (0 <= age && age <= 12) {
     alert("Ребенок");
   } else if (12 <= age && age <= 18) {
@@ -14,7 +14,7 @@ function task_1() {
 
 //task_2
 function task_2() {
-  var keyNumber = prompt("Введите число от 0 до 9");
+  let keyNumber = prompt("Введите число от 0 до 9");
   switch (keyNumber) {
     case "0":
       alert(")");
@@ -51,10 +51,10 @@ function task_2() {
 
 //task_3
 function task_3() {
-  var inputNumber = prompt("Введите трехзначное число");
-  var firstDigit = inputNumber.charAt(0);
-  var secondDigit = inputNumber.charAt(1);
-  var thirdDigit = inputNumber.charAt(2);
+  let inputNumber = prompt("Введите трехзначное число");
+  let firstDigit = inputNumber.charAt(0);
+  let secondDigit = inputNumber.charAt(1);
+  let thirdDigit = inputNumber.charAt(2);
   if (firstDigit == secondDigit && secondDigit == thirdDigit) {
     alert("Все цифры одинаковые");
   } else if (
@@ -70,7 +70,7 @@ function task_3() {
 
 //task_4
 function task_4() {
-  var year = prompt("Введите год");
+  let year = prompt("Введите год");
   if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
     alert("Високосный");
   } else {
@@ -81,7 +81,7 @@ function task_4() {
 //task_5
 function task_5() {
   while (true) {
-    var number = prompt("Введите пятизначное число");
+    let number = prompt("Введите пятизначное число");
     if (number.length == 5) {
       break;
     } else {
@@ -89,8 +89,8 @@ function task_5() {
     }
   }
 
-  var isPolindrom = true;
-  for (var i = 0; i < number.length / 2; i++) {
+  let isPolindrom = true;
+  for (let i = 0; i < number.length / 2; i++) {
     if (number.charAt(i) != number.charAt(number.length - 1 - i)) {
       isPolindrom = false;
     }
@@ -104,8 +104,8 @@ function task_5() {
 
 //task_6
 function task_6() {
-  var colUSD = prompt("Введите количество долларов");
-  var currency = prompt(
+  let colUSD = prompt("Введите количество долларов");
+  let currency = prompt(
     "Выбирите валюту на которю хотите обменять: \n 1 - EUR \n 2 - UAN \n 3 - AZN"
   );
   switch (currency) {
@@ -123,7 +123,7 @@ function task_6() {
 
 //task_7
 function task_7() {
-  var purchaseAmount = prompt("Введите сумму покупки");
+  let purchaseAmount = prompt("Введите сумму покупки");
   if (200 <= purchaseAmount && purchaseAmount <= 300) {
     alert(
       "Ваша скидка составляет 3% \n Сумма к оплате: " +
@@ -146,10 +146,10 @@ function task_7() {
 
 //task_8
 function task_8() {
-  var circumference = prompt("Введите длину окружности");
-  var perimeterTheSquare = prompt("Введите длину периметра квадрата");
-  var radius = circumference / (2 * Math.PI);
-  var sideOfTheSquare = perimeterTheSquare / 4;
+  let circumference = prompt("Введите длину окружности");
+  let perimeterTheSquare = prompt("Введите длину периметра квадрата");
+  let radius = circumference / (2 * Math.PI);
+  let sideOfTheSquare = perimeterTheSquare / 4;
   if (radius <= sideOfTheSquare / 2) {
     alert("Oкружность поместиться в указанный квадрат");
   } else {
@@ -159,10 +159,10 @@ function task_8() {
 
 //task_9
 function task_9() {
-  var questionNumber = 0;
-  var correctAnswer = 0;
+  let questionNumber = 0;
+  let correctAnswer = 0;
 
-  var answer = prompt(
+  let answer = prompt(
     "Вопрос №" +
       ++questionNumber +
       "\n Какой самый лучший язык программирования? + \n 1 - C# \n 2 - Java \n 3 - JavaScript \n Введите ответ"
@@ -171,7 +171,7 @@ function task_9() {
     correctAnswer++;
   }
 
-  var answer = prompt(
+  let answer = prompt(
     "Вопрос №" +
       ++questionNumber +
       "\n  Какой язык программирования наиболее удобен для написания веб сценариев? + \n 1 - C# \n 2 - Java \n 3 - JavaScript \n Введите ответ"
@@ -180,7 +180,7 @@ function task_9() {
     correctAnswer++;
   }
 
-  var answer = prompt(
+  let answer = prompt(
     "Вопрос №" +
       ++questionNumber +
       "\n Какой язык программирования наиболее удобен для написания разметки веб страниц? + \n 1 - HTML \n 2 - CSS \n 3 - JavaScript \n Введите ответ"
@@ -193,10 +193,10 @@ function task_9() {
 
 //task_10
 function task_10() {
-  var dd = Number(prompt("Введите день"));
-  var mm = Number(prompt("Введите месяц"));
-  var yy = Number(prompt("Введите год"));
-  var nextDay = new Date(yy, mm, dd + 1);
+  let dd = Number(prompt("Введите день"));
+  let mm = Number(prompt("Введите месяц"));
+  let yy = Number(prompt("Введите год"));
+  let nextDay = new Date(yy, mm, dd + 1);
   function numeric(key) {
     if (key < 10) {
       return "0" + key;

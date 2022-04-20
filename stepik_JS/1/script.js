@@ -1,11 +1,11 @@
-var randomloc = Math.floor(Math.random()*5);
-var location1 = randomloc;
-var location2 = randomloc+1;
-var location3 = randomloc+2;
-var guess;
-var hits = 0;
-var guesses = 0;
-var isSunk = false;
+let randomloc = Math.floor(Math.random()*5);
+let location1 = randomloc;
+let location2 = randomloc+1;
+let location3 = randomloc+2;
+let guess;
+let hits = 0;
+let guesses = 0;
+let isSunk = false;
 
 while (isSunk == false) {
     guess = prompt("Ready, aim, fire! (enter a number from 0-6):");
@@ -26,6 +26,6 @@ while (isSunk == false) {
         }
     }
 }
-var stats = "You took " + guesses + " guesses to sink the battleship, " +
+let stats = "You took " + guesses + " guesses to sink the battleship, " +
     "which means your shooting accuracy was " + (3/guesses);
 alert(stats);

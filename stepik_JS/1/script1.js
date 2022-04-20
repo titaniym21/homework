@@ -1,4 +1,4 @@
-var cadi = {
+let cadi = {
     make: "GM",
     model: "Cadillac",
     year: 1955,
@@ -22,7 +22,7 @@ var cadi = {
         }
     }
 };
-var chevy = {
+let chevy = {
     make: "Chevy",
     model: "Bel Air",
     year: 1957,
@@ -46,7 +46,7 @@ var chevy = {
         }
     }
 };
-var taxi = {
+let taxi = {
     make: "Webville Motors",
     model: "Taxi",
     year: 1955,
@@ -79,7 +79,7 @@ function startCar(car) {
 }
 
 function carInfo(car) {
-    for(var key in car) {
+    for(let key in car) {
         document.write(`${key}: ${car[key]}<br/>`);
     }
     document.write("<br/>");
