@@ -5,9 +5,9 @@ body {
 }
 
 .container {
-    width: 1024px;
-	height: 863px;
+    max-width: 1200px;
     margin: 0 auto;
+    width: 90%;
 }
 
 .gameBoard{
@@ -19,10 +19,12 @@ body {
 }
 
 .hit {
-	background: url("./img/board.jpg") no-repeat center center;
+	background: url("./img/ship.png") no-repeat center center;
+    
 }
 .miss {
 	background: url("./img/miss.png") no-repeat center center;
+
 }
 
 .table_gameBoard {
@@ -37,7 +39,7 @@ body {
 }
 
 .message{
-    position: absolute;
+    
     height: 20px;
     top: 0px;
     left: 0px;
