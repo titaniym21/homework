@@ -1,0 +1,25 @@
+table {
+    width: 300px; /* Ширина таблицы */
+    border: black 1px solid; /* Стиль рамки таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+    border-collapse: collapse; /* Одинарная рамка */
+    margin: 0 auto 0 auto /* Выравнивание таблицы по центру */
+    }
+    caption {
+    text-align: center; /* Выравнивание заголовка по центру */
+    caption-side: top /* Вывод заголовка над таблицей */
+    }
+    td, th {
+    border: black 1px solid; /* Стиль рамки ячеек */
+    padding: 10px; /* Отступ между границей и содержимым */
+    text-align: center /* Выравнивание ячейки по центру */
+    }
+    tr {
+    text-align: center; /* Горизонтальное выравнивание */
+    vertical-align: top; /* Вертикальное выравнивание */
+    }
+    tr:nth-child(2n) {
+    background: #e8e8e8 /* Зебра */
+    }
+    thead, tfoot {
+    background: #f5e0cd /* Цвет фона */
