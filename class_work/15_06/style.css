@@ -1,46 +1,92 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    background-color: rgb(255, 81, 0);
-    width: 60vw;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: rgb(255, 81, 0);
+  width: 60vw;
+  height: 60vh;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-p {
-    margin: 0;
+p, span {
+  margin: 0;
 }
 
-.form_box{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    
+.form_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
-
 
 .main_form {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    background-color: rgb(185, 184, 184);
-
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: rgb(185, 184, 184);
 }
 
-.form_input{
-    margin: 20px;
-
+.form_input {
+  margin: 15px;
 }
 
-.logon_button{
-    background-color: green;
+.logon_button {
+  background-color: green;
+  color: white;
+}
+
+.in_form {
+  width: 20vw;
+  height: 4vh;
+  text-align: center;
+}
+
+.fogot_pass {
+  text-decoration: none;
+  color: rgb(255, 81, 0);
+  font-weight: 600;
+}
+
+.text_after_form {
+  text-align: center;
+  margin: 15px;
+  color: white;
+}
+
+.alternative_login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  grid-gap: 10px;
+}
+
+.alternative_link {
+  text-decoration: none;
+  color: white;
+  width: 14vw;
+  height: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alternative_img {
+  width: 2vw;
+  height: 2vh;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.color_fb {
+  background-color: rgb(59, 89, 152);
+}
+.color_tw {
+  background-color: rgb(0, 172, 237);
 }

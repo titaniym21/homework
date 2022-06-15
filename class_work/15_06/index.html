@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="form_box">
-           <form action="member_login" method="post" class="main_form">
-                <div class="form_title">
-                     <h1>Member Login</h1>
-                </div>
-                <div class="form_input">
-                    <input type="text" name="Username" placeholder="Username">
-                </div>
-                <div class="form_input">
-                    <input type="password" name="Password" placeholder="Password">
-                </div>
-                <div class="form_input">
-                    <input type="submit" value="Login" class="logon_button">
-                </div>
-                <div>
-                    <a href="#">Fogot password?</a>
-                </div>
-           </form>
-           <div class="text_after_form">
-                <p>... or log in whith:</p>
-           </div>
-           <div class="alternative_login">
-                <a href="#">
-                    <img src="./images/photo_2022-06-15_20-36-55.jpg" alt="facebook">
-                </a>
-                <a href="#">
-                    <img src="./images/photo_2022-06-15_20-37-13.jpg" alt="twitter">
-                </a>
-           </div>
+      <div class="form_box">
+        <form action="member_login" method="post" class="main_form">
+          <div class="form_title">
+            <h1>Member Login</h1>
+          </div>
+          <div class="form_input">
+            <input
+              type="text"
+              name="Username"
+              placeholder="Username"
+              class="in_form"
+            />
+          </div>
+          <div class="form_input">
+            <input
+              type="password"
+              name="Password"
+              placeholder="Password"
+              class="in_form"
+            />
+          </div>
+          <div class="form_input">
+            <input type="submit" value="Login" class="logon_button in_form" />
+          </div>
+          <div class="form_input">
+            <a class="fogot_pass" href="#">Fogot password?</a>
+          </div>
+        </form>
+        <div class="text_after_form form_input">
+          <p>... or log in whith:</p>
         </div>
-    </div>        
-</body>
+        <div class="alternative_login">
+          <a class="alternative_link color_fb" href="#">
+            <img
+              class="alternative_img"
+              src="./images/photo_2022-06-15_20-36-55.jpg"
+              alt="facebook"
+            />
+            <span>Facebook</span>
+          </a>
+          <a class="alternative_link color_tw" href="#">
+            <img
+              class="alternative_img"
+              src="./images/photo_2022-06-15_20-37-13.jpg"
+              alt="twitter"
+            />
+            <span>Twitter</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
