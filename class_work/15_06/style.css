@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgb(255, 81, 0);
+    width: 60vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+
+.form_box{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+}
+
+
+.main_form {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: rgb(185, 184, 184);
+
+}
+
+.form_input{
+    margin: 20px;
+
+}
+
+.logon_button{
+    background-color: green;
+}
